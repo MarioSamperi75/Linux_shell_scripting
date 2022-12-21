@@ -40,4 +40,5 @@ exit 0
 # bash -x filename          - to debug
 
 # in the script
-# set x                     - set a check point
+# set -x                     - set a check point activate debbugging from that point
+# set +x                     - inactivate debbugging from that point

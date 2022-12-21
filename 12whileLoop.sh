@@ -1,7 +1,14 @@
 #! /bin/bash
 
 #  structure
-#       while [ condition ]
+#       while [ condition to loop ]
+#       do
+#           command1
+#           command2
+#           command3
+#       done
+
+#       until [ condition  to stop]
 #       do
 #           command1
 #           command2
