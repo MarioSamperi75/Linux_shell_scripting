@@ -1,0 +1,112 @@
+pwd             present working directory
+ls              list
+ls -l or ll     list with details
+ls -a           list with hidden files
+ls -i           list with inode number
+
+cat    
+cat>filename    -  you can add text - ctrl+d to save
+cat filename    -  shows the content       
+touch
+touch filename  - create an empty filename
+
+mv/cpoy         - move command
+mv name1 name2  - remame name1 with name2
+mv path1 path2  - cut/paste
+cp name1 name2  - copy ansd remame name1 with name2
+cp path1 path2  - copy/paste
+
+
+
+wc namefile     - word counter (lines, words, characters)
+wc -l filemane  - just lines
+wc -w filename  - just words
+wc -c filename  - just characters
+
+rm              - remove file
+rm filename
+rm file1 file2
+rm *            - all the files in that directrory
+
+-r              - flag to delet,copy or rename/move a directory 
+
+cd 
+mkdir
+mkdir file1 file2
+mkdir part1\ part2 - escape sign to write a space!
+ls -la
+
+.               - current directory
+. .             - immediate parent directory
+
+chmod           -changing permission
+u, g, o, a       - user, groups, others, all
++ - =           - add, subtract, assign
+
+EX.
+chmod g+w,o-r file1
+chmod u+rx  file1
+chmod u=rwx file1
+chmod a=rwx file1
+
+s = inerithed permission
+
+chmod octal
+0 = no permission       1 = execute permission
+2 = write permission    3 = execute and write (2+1)
+4 = read permission     5 = (4+1)
+6 = (4+2)               7 = (4+3) = (4+2+1)
+
+EX.
+chmode 750 file1        7user 5group 0 others
+umask                   to calculate default permission 4 number. do not consider the first one
+                        7777 - umask = default permission
+umask 000               change umask to 000 -> permission = 777
+umask 027               permission = 750
+
+ENV                     list the environnements variables
+ENV name=value          assigns a new env variable
+$VAR_NAME               shows the content of the variable
+
+history                 list of the bash commands you used
+
+pr filename -2 |more    shows the content in two columns
+lpr filename            sends the file to the local printer
+
+mail -s subject root@localhost  sends mail to localhost
+
+sort filename           shows all the items in alphabetic order
+sort -f filename        alphabetic order (Capital-Lower style)
+sort -n filename        ordering by values
+sort -r filename        reverse
+sort -number            you can combine
+
+command_1 | command_2 | command_3 | .... | command_N            pipes: to redirect the result of the first command as input for the second one... and so on.
+
+                        editors
+gedit filename
+nano filename           
+vim filename
+vi filename 
+
+                        Vi commands
+
+i                       go to insert mode
+escape                  go to commands mode
+yy                      copy
+4yy                     copy 4 lines
+p                       paste
+dd                      delete a lines
+4 dd                    delete 4 lines   
+cc                      cut a lines
+4cc                     cut 4 lines   
+/word                   find all 'word' occurrences - n to the next one
+:set number             to set the number in the lines
+:wq                     write and quit
+:q!                     quit without saving
+
+sh filename             to run the scripts
+
+
+
+
